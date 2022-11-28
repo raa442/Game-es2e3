@@ -1,0 +1,364 @@
+
+*** Running vivado
+    with args -log game_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source game_top.tcl -notrace
+Command: synth_design -top game_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14420 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 728.324 ; gain = 177.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'game_top' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/game_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/.Xil/Vivado-23332-LAPTOP-CM6UK3C8/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/.Xil/Vivado-23332-LAPTOP-CM6UK3C8/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'drawcon' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/drawcon.v:23]
+	Parameter BLK_SIZE_X bound to: 100 - type: integer 
+	Parameter BLK_SIZE_Y bound to: 100 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/.Xil/Vivado-23332-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (2#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/.Xil/Vivado-23332-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'drawcon' (3#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/drawcon.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/vga.v:23]
+	Parameter HLINE_ bound to: 11'b11101110000 
+	Parameter HSYNCPULSE_ bound to: 11'b00010011000 
+	Parameter HBACKPORCH bound to: 11'b00011101000 
+	Parameter HFRONTPORCH bound to: 11'b00001010000 
+	Parameter VLINE_ bound to: 10'b1110100100 
+	Parameter VSYNCPULSE_ bound to: 10'b0000000011 
+	Parameter VBACKPORCH bound to: 10'b0000011100 
+	Parameter VFRONTPORCH bound to: 10'b0000000001 
+INFO: [Synth 8-6155] done synthesizing module 'vga' (4#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/vga.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_top' (5#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/game_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 794.746 ; gain = 244.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 794.746 ; gain = 244.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 794.746 ; gain = 244.379
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
+Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
+Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'DRAWCONINST/inst'
+Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'DRAWCONINST/inst'
+Parsing XDC File [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]
+Finished Parsing XDC File [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/game_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/game_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 920.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 920.492 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DRAWCONINST/inst' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 922.496 ; gain = 372.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 922.496 ; gain = 372.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for CLK. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DRAWCONINST/inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 922.496 ; gain = 372.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 922.496 ; gain = 372.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 9     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module game_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module drawcon 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\blkpos_y_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\blkpos_y_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\blkpos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\blkpos_x_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 922.496 ; gain = 372.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK/clk_out1' to pin 'CLK/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 922.496 ; gain = 372.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 922.496 ; gain = 372.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 923.242 ; gain = 372.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |clk_wiz_0     |     1|
+|3     |CARRY4        |    17|
+|4     |LUT1          |     9|
+|5     |LUT2          |    51|
+|6     |LUT3          |    14|
+|7     |LUT4          |    43|
+|8     |LUT5          |    37|
+|9     |LUT6          |    61|
+|10    |MUXF7         |     1|
+|11    |FDRE          |   107|
+|12    |FDSE          |     2|
+|13    |IBUF          |     6|
+|14    |OBUF          |    14|
++------+--------------+------+
+
+Report Instance Areas: 
++------+--------------+--------+------+
+|      |Instance      |Module  |Cells |
++------+--------------+--------+------+
+|1     |top           |        |   375|
+|2     |  DRAWCONINST |drawcon |    86|
+|3     |  VGAINST     |vga     |   160|
++------+--------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 928.023 ; gain = 249.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 936.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 936.523 ; gain = 644.898
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 936.523 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/game_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 16 18:14:13 2022...
