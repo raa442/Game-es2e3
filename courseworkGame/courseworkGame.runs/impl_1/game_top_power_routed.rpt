@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Wed Nov 16 18:15:09 2022
+| Date             : Tue Dec  6 17:27:52 2022
 | Host             : LAPTOP-CM6UK3C8 running 64-bit major release  (build 9200)
 | Command          : report_power -file game_top_power_routed.rpt -pb game_top_power_summary_routed.pb -rpx game_top_power_routed.rpx
 | Design           : game_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.212        |
+| Total On-Chip Power (W)  | 0.242        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.114        |
-| Device Static (W)        | 0.098        |
+| Dynamic (W)              | 0.142        |
+| Device Static (W)        | 0.101        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.0         |
-| Junction Temperature (C) | 26.0         |
+| Max Ambient (C)          | 83.9         |
+| Junction Temperature (C) | 26.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -49,23 +49,26 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      382 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      168 |     63400 |            0.26 |
-|   Register     |    <0.001 |      115 |    126800 |            0.09 |
-|   CARRY4       |    <0.001 |       17 |     15850 |            0.11 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     63400 |           <0.01 |
-|   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |    <0.001 |      298 |       --- |             --- |
-| Block RAM      |     0.004 |        4 |       135 |            2.96 |
-| MMCM           |     0.101 |        1 |         6 |           16.67 |
-| I/O            |     0.006 |       21 |       210 |           10.00 |
-| Static Power   |     0.098 |          |           |                 |
-| Total          |     0.212 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.006 |        5 |       --- |             --- |
+| Slice Logic             |     0.002 |     1268 |       --- |             --- |
+|   LUT as Logic          |     0.002 |      711 |     63400 |            1.12 |
+|   CARRY4                |    <0.001 |       68 |     15850 |            0.43 |
+|   Register              |    <0.001 |      173 |    126800 |            0.14 |
+|   F7/F8 Muxes           |    <0.001 |       54 |     63400 |            0.09 |
+|   LUT as Shift Register |    <0.001 |        4 |     19000 |            0.02 |
+|   Others                |     0.000 |      144 |       --- |             --- |
+|   BUFG                  |     0.000 |        1 |        32 |            3.13 |
+| Signals                 |     0.006 |     1308 |       --- |             --- |
+| Block RAM               |     0.016 |       64 |       135 |           47.41 |
+| MMCM                    |     0.101 |        1 |         6 |           16.67 |
+| DSPs                    |     0.002 |        3 |       240 |            1.25 |
+| I/O                     |     0.008 |       23 |       210 |           10.95 |
+| Static Power            |     0.101 |          |           |                 |
+| Total                   |     0.242 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -74,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.023 |       0.007 |      0.015 |
+| Vccint    |       1.000 |     0.048 |       0.031 |      0.017 |
 | Vccaux    |       1.800 |     0.074 |       0.056 |      0.018 |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -83,7 +86,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.003 |       0.001 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -130,7 +133,7 @@ Table of Contents
 +--------------------+-----------------------------+-----------------+
 | Clock              | Domain                      | Constraint (ns) |
 +--------------------+-----------------------------+-----------------+
-| CLK/inst/clk_in1   | clk_IBUF                    |            10.0 |
+| CLK/inst/clk_in1   | clk_IBUF_BUFG               |            10.0 |
 | clk_out1_clk_wiz_0 | CLK/inst/clk_out1_clk_wiz_0 |             9.4 |
 | clkfbout_clk_wiz_0 | CLK/inst/clkfbout_clk_wiz_0 |            70.0 |
 +--------------------+-----------------------------+-----------------+
@@ -145,13 +148,19 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| game_top      |     0.114 |
+| game_top      |     0.142 |
 |   CLK         |     0.101 |
 |     inst      |     0.101 |
-|   DRAWCONINST |     0.005 |
-|     inst      |     0.005 |
-|       U0      |     0.005 |
-|   VGAINST     |     0.001 |
+|   DRAWCONINST |     0.027 |
+|     inst2     |     0.003 |
+|       U0      |     0.003 |
+|     inst3     |     0.002 |
+|       U0      |     0.002 |
+|     inst4     |     0.006 |
+|       U0      |     0.006 |
+|     inst6     |     0.009 |
+|       U0      |     0.009 |
+|   VGAINST     |     0.002 |
 +---------------+-----------+
 
 

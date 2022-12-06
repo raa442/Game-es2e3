@@ -66,19 +66,26 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.cache/wt} [current_project]
-  set_property parent.project_path {D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.xpr} [current_project]
-  set_property ip_output_repo {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.cache/wt} [current_project]
+  set_property parent.project_path {D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.xpr} [current_project]
+  set_property ip_output_repo {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/game_top.dcp}}
-  read_ip -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
-  read_ip -quiet {{d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
-  read_xdc {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc}}
+  add_files -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/game_top.dcp}}
+  read_ip -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+  read_ip -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+  read_ip -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}
+  read_ip -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}
+  read_ip -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci}}
+  read_ip -quiet {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci}}
+  read_ip -quiet {{d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}
+  read_ip -quiet {{d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci}}
+  read_xdc {{D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc}}
   link_design -top game_top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

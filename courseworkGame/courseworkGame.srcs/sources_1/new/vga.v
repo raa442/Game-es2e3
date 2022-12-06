@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module vga#(parameter [10:0] HLINE_=1904,
-            parameter [10:0] HSYNCPULSE_=152,
+module vga#(parameter [10:0] HLINE=1903,
+            parameter [10:0] HSYNCPULSE=151,
             parameter [10:0] HBACKPORCH=232, 
             parameter [10:0] HFRONTPORCH=80,
-            parameter [9:0] VLINE_=932,
-            parameter [9:0] VSYNCPULSE_=3,
+            parameter [9:0] VLINE=931,
+            parameter [9:0] VSYNCPULSE=2,
             parameter [9:0] VBACKPORCH=28,
             parameter [9:0] VFRONTPORCH=1  )(
     input pixclk,
@@ -42,10 +42,10 @@ module vga#(parameter [10:0] HLINE_=1904,
     
     output hsync, output vsync
     );
-    wire[10:0] HLINE=HLINE_-11'd1;
-    wire[9:0] VLINE=VLINE_-11'd1;
-    wire[9:0] VSYNCPULSE=VSYNCPULSE_-10'd1;
-    wire[10:0] HSYNCPULSE=HSYNCPULSE_-10'd1;
+  //  wire[10:0] HLINE=HLINE_-11'd1;
+  //  wire[9:0] VLINE=VLINE_-11'd1;
+  //  wire[9:0] VSYNCPULSE=VSYNCPULSE_-10'd1;
+ //   wire[10:0] HSYNCPULSE=HSYNCPULSE_-10'd1;
  //clk_wiz_0 CLK (  .clk_out1(pixclk),.clk_in1(clk));
     reg [10:0] hcount;
     reg [9:0] vcount;

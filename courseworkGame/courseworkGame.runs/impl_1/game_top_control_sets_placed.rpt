@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Nov 16 18:14:45 2022
+| Date         : Tue Dec  6 17:27:22 2022
 | Host         : LAPTOP-CM6UK3C8 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file game_top_control_sets_placed.rpt
 | Design       : game_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     9 |
-|    Minimum number of control sets                        |     9 |
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    37 |
+| Unused register locations in slices containing registers |    43 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     9 |
-| >= 0 to < 4        |     0 |
+| Total control sets |    13 |
+| >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     1 |
-| >= 8 to < 10       |     2 |
-| >= 10 to < 12      |     2 |
-| >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,30 +58,34 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               6 |            2 |
+| No           | No                    | No                     |              33 |           17 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              67 |           24 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              78 |           42 |
+| Yes          | No                    | No                     |               8 |            3 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              42 |           11 |
+| Yes          | Yes                   | No                     |              54 |           20 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+--------------------------+------------------------------+------------------+----------------+
-|    Clock Signal    |       Enable Signal      |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
-+--------------------+--------------------------+------------------------------+------------------+----------------+
-|  CLK/inst/clk_out1 |                          |                              |                2 |              6 |
-|  game_clk_reg_n_0  | blkpos_x[10]_i_1_n_0     | btn_IBUF[0]                  |                3 |              9 |
-|  game_clk_reg_n_0  | blkpos_y_reg[10]_i_1_n_0 | btn_IBUF[0]                  |                3 |              9 |
-|  CLK/inst/clk_out1 | VGAINST/line_end         | VGAINST/vcount[9]_i_1_n_0    |                3 |             10 |
-|  CLK/inst/clk_out1 |                          | VGAINST/hcount[10]_i_1_n_0   |                3 |             11 |
-|  CLK/inst/clk_out1 |                          | DRAWCONINST/blk_r[3]_i_1_n_0 |                5 |             12 |
-|  CLK/inst/clk_out1 | DRAWCONINST/p_1_in       | DRAWCONINST/SR[0]            |                2 |             14 |
-|  clk_IBUF          |                          | DRAWCONINST/SR[0]            |                7 |             22 |
-|  CLK/inst/clk_out1 |                          | VGAINST/curr_x_r[10]_i_1_n_0 |                9 |             22 |
-+--------------------+--------------------------+------------------------------+------------------+----------------+
++------------------------+------------------------+----------------------------+------------------+----------------+
+|      Clock Signal      |      Enable Signal     |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------------+------------------------+----------------------------+------------------+----------------+
+|  game_clk_reg_n_0_BUFG |                        |                            |                1 |              2 |
+|  clk_IBUF_BUFG         |                        |                            |                3 |              7 |
+|  game_clk_reg_n_0_BUFG | ballPhs/velX           | gameReset_IBUF             |                3 |              7 |
+|  CLK/inst/clk_out1     | VGAINST/line_end       | VGAINST/vcount[9]_i_1_n_0  |                4 |             10 |
+|  CLK/inst/clk_out1     |                        | VGAINST/hcount[10]_i_1_n_0 |                7 |             11 |
+|  game_clk_reg_n_0_BUFG |                        | gameReset_IBUF             |                5 |             11 |
+|  game_clk_reg_n_0_BUFG | player/playerPosX      | gameReset_IBUF             |                4 |             11 |
+|  CLK/inst/clk_out1     |                        | DRAWCONINST/SR[0]          |                9 |             12 |
+|  clk_IBUF_BUFG         | in/p_0_in_0            |                            |                3 |             12 |
+|  CLK/inst/clk_out1     |                        | VGAINST/SR[0]              |               14 |             22 |
+|  clk_IBUF_BUFG         |                        | DRAWCONINST/SR[0]          |                7 |             22 |
+|  CLK/inst/clk_out1     |                        |                            |               13 |             24 |
+|  game_clk_reg_n_0_BUFG | ballPhs/posY_reg[15]_1 | gameReset_IBUF             |                9 |             26 |
++------------------------+------------------------+----------------------------+------------------+----------------+
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Nov 16 18:14:13 2022
+| Date         : Tue Dec  6 17:26:35 2022
 | Host         : LAPTOP-CM6UK3C8 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
 | Design       : game_top
@@ -27,18 +27,20 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+------+-------+-----------+-------+
-|        Site Type        | Used | Fixed | Available | Util% |
-+-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  155 |     0 |     63400 |  0.24 |
-|   LUT as Logic          |  155 |     0 |     63400 |  0.24 |
-|   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  109 |     0 |    126800 |  0.09 |
-|   Register as Flip Flop |  109 |     0 |    126800 |  0.09 |
-|   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |    1 |     0 |     31700 | <0.01 |
-| F8 Muxes                |    0 |     0 |     15850 |  0.00 |
-+-------------------------+------+-------+-----------+-------+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| Slice LUTs*                |  521 |     0 |     63400 |  0.82 |
+|   LUT as Logic             |  517 |     0 |     63400 |  0.82 |
+|   LUT as Memory            |    4 |     0 |     19000 |  0.02 |
+|     LUT as Distributed RAM |    0 |     0 |           |       |
+|     LUT as Shift Register  |    4 |     0 |           |       |
+| Slice Registers            |  152 |     0 |    126800 |  0.12 |
+|   Register as Flip Flop    |  152 |     0 |    126800 |  0.12 |
+|   Register as Latch        |    0 |     0 |    126800 |  0.00 |
+| F7 Muxes                   |    0 |     0 |     31700 |  0.00 |
+| F8 Muxes                   |    0 |     0 |     15850 |  0.00 |
++----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -56,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 2     |          Yes |         Set |            - |
-| 107   |          Yes |       Reset |            - |
+| 24    |          Yes |         Set |            - |
+| 128   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -77,11 +79,12 @@ Table of Contents
 3. DSP
 ------
 
-+-----------+------+-------+-----------+-------+
-| Site Type | Used | Fixed | Available | Util% |
-+-----------+------+-------+-----------+-------+
-| DSPs      |    0 |     0 |       240 |  0.00 |
-+-----------+------+-------+-----------+-------+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |    4 |     0 |       240 |  1.67 |
+|   DSP48E1 only |    4 |       |           |       |
++----------------+------+-------+-----------+-------+
 
 
 4. IO and GT Specific
@@ -90,7 +93,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   21 |     0 |       210 | 10.00 |
+| Bonded IOB                  |   23 |     0 |       210 | 10.95 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -112,7 +115,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         6 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         6 |  0.00 |
@@ -146,18 +149,20 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  107 |        Flop & Latch |
-| LUT6     |   61 |                 LUT |
-| LUT2     |   51 |                 LUT |
-| LUT4     |   43 |                 LUT |
-| LUT5     |   37 |                 LUT |
-| CARRY4   |   17 |          CarryLogic |
-| OBUF     |   14 |                  IO |
-| LUT3     |   14 |                 LUT |
-| LUT1     |    9 |                 LUT |
+| LUT2     |  193 |                 LUT |
+| LUT6     |  144 |                 LUT |
+| FDRE     |  128 |        Flop & Latch |
+| LUT4     |   97 |                 LUT |
+| LUT5     |   90 |                 LUT |
+| CARRY4   |   89 |          CarryLogic |
+| LUT3     |   74 |                 LUT |
+| LUT1     |   34 |                 LUT |
+| FDSE     |   24 |        Flop & Latch |
+| OBUF     |   16 |                  IO |
 | IBUF     |    7 |                  IO |
-| FDSE     |    2 |        Flop & Latch |
-| MUXF7    |    1 |               MuxFx |
+| SRLC32E  |    4 |  Distributed Memory |
+| DSP48E1  |    4 |    Block Arithmetic |
+| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 
@@ -168,7 +173,11 @@ Table of Contents
 |    Ref Name   | Used |
 +---------------+------+
 | clk_wiz_0     |    1 |
-| blk_mem_gen_0 |    1 |
+| blk_mem_gen_6 |    1 |
+| blk_mem_gen_5 |    1 |
+| blk_mem_gen_4 |    1 |
+| blk_mem_gen_2 |    1 |
+| blk_mem_gen_1 |    1 |
 +---------------+------+
 
 

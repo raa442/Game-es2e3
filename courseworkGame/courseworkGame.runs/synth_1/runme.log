@@ -15,32 +15,99 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14420 
+INFO: Helper process launched with PID 24012 
+WARNING: [Synth 8-2507] parameter declaration becomes local in drawcon with formal parameter declaration list [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:64]
+WARNING: [Synth 8-2507] parameter declaration becomes local in drawcon with formal parameter declaration list [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:79]
+WARNING: [Synth 8-2507] parameter declaration becomes local in drawcon with formal parameter declaration list [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:80]
+WARNING: [Synth 8-2507] parameter declaration becomes local in drawcon with formal parameter declaration list [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:81]
+WARNING: [Synth 8-2507] parameter declaration becomes local in drawcon with formal parameter declaration list [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:82]
+WARNING: [Synth 8-2507] parameter declaration becomes local in drawcon with formal parameter declaration list [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:85]
+WARNING: [Synth 8-2507] parameter declaration becomes local in drawcon with formal parameter declaration list [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:87]
+WARNING: [Synth 8-2507] parameter declaration becomes local in drawcon with formal parameter declaration list [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:88]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 728.324 ; gain = 177.957
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 737.918 ; gain = 184.535
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'game_top' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/game_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/.Xil/Vivado-23332-LAPTOP-CM6UK3C8/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/.Xil/Vivado-23332-LAPTOP-CM6UK3C8/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'drawcon' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/drawcon.v:23]
-	Parameter BLK_SIZE_X bound to: 100 - type: integer 
-	Parameter BLK_SIZE_Y bound to: 100 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/.Xil/Vivado-23332-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (2#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/.Xil/Vivado-23332-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'drawcon' (3#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/drawcon.v:23]
-INFO: [Synth 8-6157] synthesizing module 'vga' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/vga.v:23]
-	Parameter HLINE_ bound to: 11'b11101110000 
-	Parameter HSYNCPULSE_ bound to: 11'b00010011000 
+INFO: [Synth 8-6157] synthesizing module 'game_top' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/game_top.v:23]
+	Parameter PADDLE_LENGTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/vga.v:23]
+	Parameter HLINE bound to: 11'b11101101111 
+	Parameter HSYNCPULSE bound to: 11'b00010010111 
 	Parameter HBACKPORCH bound to: 11'b00011101000 
 	Parameter HFRONTPORCH bound to: 11'b00001010000 
-	Parameter VLINE_ bound to: 10'b1110100100 
-	Parameter VSYNCPULSE_ bound to: 10'b0000000011 
+	Parameter VLINE bound to: 10'b1110100011 
+	Parameter VSYNCPULSE bound to: 10'b0000000010 
 	Parameter VBACKPORCH bound to: 10'b0000011100 
 	Parameter VFRONTPORCH bound to: 10'b0000000001 
-INFO: [Synth 8-6155] done synthesizing module 'vga' (4#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/vga.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'game_top' (5#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/new/game_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (2#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/vga.v:23]
+INFO: [Synth 8-6157] synthesizing module 'drawcon' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:23]
+	Parameter PADDLE_LENGTH bound to: 100 - type: integer 
+	Parameter RADIUS bound to: 10 - type: integer 
+	Parameter BLK_SIZE_X bound to: 100 - type: integer 
+	Parameter BLK_SIZE_Y bound to: 100 - type: integer 
+	Parameter BRICK_ROOT_X bound to: 198 - type: integer 
+	Parameter BRICK_ROOT_Y bound to: 198 - type: integer 
+	Parameter BRICK_ARRAY_X bound to: 8 - type: integer 
+	Parameter BRICK_ARRAY_Y bound to: 2 - type: integer 
+	Parameter BRICK_SIZE_X bound to: 128 - type: integer 
+	Parameter BRICK_SIZE_Y bound to: 128 - type: integer 
+	Parameter BR_SIZE_X bound to: 10 - type: integer 
+	Parameter BR_SIZE_Y bound to: 10 - type: integer 
+	Parameter INFO_HEIGHT bound to: 100 - type: integer 
+	Parameter INFO_WIDTH bound to: 1440 - type: integer 
+	Parameter BRICK_BUFFER_X bound to: 208 - type: integer 
+	Parameter BRICK_BUFFER_Y bound to: 308 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (3#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (4#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_4' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_4' (5#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_5' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_5' (6#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_6' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_6' (7#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/.Xil/Vivado-564-LAPTOP-CM6UK3C8/realtime/blk_mem_gen_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'drawcon' (8#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/drawcon.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ballPhysics' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/ballPhysics.v:23]
+	Parameter RADIUS bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ballPhysics' (9#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/ballPhysics.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inputs' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/inputs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'inputs' (10#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/inputs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'playerMovement' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/playerMovement.v:23]
+	Parameter PADDLE_LENGTH bound to: 100 - type: integer 
+	Parameter SPEED bound to: 11'b00000000101 
+INFO: [Synth 8-6155] done synthesizing module 'playerMovement' (11#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/playerMovement.v:23]
+INFO: [Synth 8-6157] synthesizing module 'boundsCollsion' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/boundsCollsion.v:23]
+	Parameter minX bound to: 11'b00000001001 
+	Parameter minY bound to: 11'b00001101101 
+	Parameter maxX bound to: 11'b10110010101 
+	Parameter maxY bound to: 11'b01101111001 
+	Parameter RADIUS bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'boundsCollsion' (12#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/boundsCollsion.v:23]
+INFO: [Synth 8-6157] synthesizing module 'playerCollision' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/playerCollision.v:23]
+	Parameter PADDLE_LENGTH bound to: 100 - type: integer 
+	Parameter RADIUS bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'playerCollision' (13#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/playerCollision.v:23]
+INFO: [Synth 8-6157] synthesizing module 'brick_update' [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/imports/Downloads/brick_update.v:23]
+	Parameter BRICK_ROOT_X bound to: 198 - type: integer 
+	Parameter BRICK_ROOT_Y bound to: 198 - type: integer 
+	Parameter BRICK_ARRAY_X bound to: 8 - type: integer 
+	Parameter BRICK_ARRAY_Y bound to: 2 - type: integer 
+	Parameter BRICK_SIZE_X bound to: 128 - type: integer 
+	Parameter BRICK_SIZE_Y bound to: 128 - type: integer 
+	Parameter BR_SIZE_X bound to: 10 - type: integer 
+	Parameter BR_SIZE_Y bound to: 10 - type: integer 
+	Parameter INFO_HEIGHT bound to: 100 - type: integer 
+	Parameter INFO_WIDTH bound to: 1440 - type: integer 
+	Parameter BRICK_BUFFER_X bound to: 208 - type: integer 
+	Parameter BRICK_BUFFER_Y bound to: 308 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'brick_update' (14#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/imports/Downloads/brick_update.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_top' (15#1) [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/game_top.v:23]
+WARNING: [Synth 8-3331] design inputs has unconnected port rst
+WARNING: [Synth 8-3331] design drawcon has unconnected port drawPlayerAnimation
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 794.746 ; gain = 244.379
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 778.496 ; gain = 225.113
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -53,53 +120,71 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 794.746 ; gain = 244.379
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 778.496 ; gain = 225.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 794.746 ; gain = 244.379
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 778.496 ; gain = 225.113
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
-Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
-Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'DRAWCONINST/inst'
-Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'DRAWCONINST/inst'
-Parsing XDC File [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]
-Finished Parsing XDC File [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/game_top_propImpl.xdc].
+Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
+Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
+Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'DRAWCONINST/inst2'
+Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'DRAWCONINST/inst2'
+Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'DRAWCONINST/inst3'
+Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'DRAWCONINST/inst3'
+Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'DRAWCONINST/inst4'
+Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'DRAWCONINST/inst4'
+Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5/blk_mem_gen_5_in_context.xdc] for cell 'DRAWCONINST/inst5'
+Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5/blk_mem_gen_5_in_context.xdc] for cell 'DRAWCONINST/inst5'
+Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6/blk_mem_gen_6_in_context.xdc] for cell 'DRAWCONINST/inst6'
+Finished Parsing XDC File [d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6/blk_mem_gen_6_in_context.xdc] for cell 'DRAWCONINST/inst6'
+Parsing XDC File [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]
+Finished Parsing XDC File [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/constrs_1/imports/lab2p1/masterConstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/game_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/game_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 920.492 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 927.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 920.492 ; gain = 0.000
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DRAWCONINST/inst' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 927.957 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DRAWCONINST/inst2' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DRAWCONINST/inst3' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DRAWCONINST/inst4' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DRAWCONINST/inst5' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DRAWCONINST/inst6' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 922.496 ; gain = 372.129
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 929.984 ; gain = 376.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 922.496 ; gain = 372.129
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 929.984 ; gain = 376.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {d:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
 Applied set_property DONT_TOUCH = true for CLK. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for DRAWCONINST/inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DRAWCONINST/inst2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DRAWCONINST/inst3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DRAWCONINST/inst4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DRAWCONINST/inst5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DRAWCONINST/inst6. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 922.496 ; gain = 372.129
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 929.984 ; gain = 376.602
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/ballPhysics.v:71]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.srcs/sources_1/new/ballPhysics.v:71]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 922.496 ; gain = 372.129
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 929.984 ; gain = 376.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -112,25 +197,47 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 2     
 	   2 Input     21 Bit       Adders := 1     
-	   2 Input     14 Bit       Adders := 1     
-	   2 Input     12 Bit       Adders := 2     
-	   2 Input     11 Bit       Adders := 9     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 8     
+	   3 Input     12 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 6     
+	   2 Input     11 Bit       Adders := 8     
+	   3 Input     11 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 5     
+	   3 Input      8 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
 	               21 Bit    Registers := 1     
-	               14 Bit    Registers := 1     
-	               11 Bit    Registers := 5     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
 	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                13x13  Multipliers := 2     
 +---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
 	   2 Input     21 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 1     
-	   3 Input     11 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -142,26 +249,11 @@ Module game_top
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     21 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 6     
 +---Registers : 
 	               21 Bit    Registers := 1     
-	               11 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     21 Bit        Muxes := 1     
-	   3 Input     11 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 2     
-Module drawcon 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     14 Bit       Adders := 1     
-	   2 Input     12 Bit       Adders := 2     
-+---Registers : 
-	               14 Bit    Registers := 1     
-	                4 Bit    Registers := 3     
-+---Muxes : 
-	   2 Input     14 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 1     
 Module vga 
 Detailed RTL Component Info : 
@@ -174,6 +266,86 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      4 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 3     
+Module drawcon 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 8     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
++---Multipliers : 
+	                13x13  Multipliers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module ballPhysics 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module inputs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module playerMovement 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module boundsCollsion 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 4     
+Module playerCollision 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+Module brick_update 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -190,12 +362,65 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\blkpos_y_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\blkpos_y_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\blkpos_x_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\blkpos_x_reg[1] )
+DSP Report: Generating DSP infoBarAddress_reg, operation Mode is: C+A*(B:0x5a0).
+DSP Report: register infoBarAddress_reg is absorbed into DSP infoBarAddress_reg.
+DSP Report: operator infoBarAddress0 is absorbed into DSP infoBarAddress_reg.
+DSP Report: operator infoBarAddress1 is absorbed into DSP infoBarAddress_reg.
+DSP Report: Generating DSP addrPlayer, operation Mode is: C+A*(B:0x64)+1.
+DSP Report: operator addrPlayer is absorbed into DSP addrPlayer.
+DSP Report: operator addrPlayer0 is absorbed into DSP addrPlayer.
+DSP Report: Generating DSP addrGameOver, operation Mode is: C+A*(B:0x2d0).
+DSP Report: operator addrGameOver is absorbed into DSP addrGameOver.
+DSP Report: operator addrGameOver0 is absorbed into DSP addrGameOver.
+DSP Report: Generating DSP p_8_out, operation Mode is: C+A*(B:0x32).
+DSP Report: operator p_8_out is absorbed into DSP p_8_out.
+DSP Report: operator p_6_in is absorbed into DSP p_8_out.
+WARNING: [Synth 8-3331] design inputs has unconnected port rst
+WARNING: [Synth 8-3331] design drawcon has unconnected port drawPlayerAnimation
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BRICK_UPDATE_INST/brick_array_reg_reg[4] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 922.496 ; gain = 372.129
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 929.984 ; gain = 376.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|drawcon     | C+A*(B:0x5a0)  | 11     | 11     | 11     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|drawcon     | C+A*(B:0x64)+1 | 12     | 7      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|drawcon     | C+A*(B:0x2d0)  | 16     | 10     | 10     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|drawcon     | C+A*(B:0x32)   | 13     | 6      | 13     | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -209,13 +434,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK/clk_out1' to pin 'CLK/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 922.496 ; gain = 372.129
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 948.930 ; gain = 395.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 922.496 ; gain = 372.129
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1026.508 ; gain = 473.125
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -227,7 +452,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 923.242 ; gain = 372.875
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1032.652 ; gain = 479.270
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -251,7 +476,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1038.387 ; gain = 485.004
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -264,7 +489,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1038.387 ; gain = 485.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -276,25 +501,39 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1038.387 ; gain = 485.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1038.387 ; gain = 485.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1038.387 ; gain = 485.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1038.387 ; gain = 485.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|game_top    | in/databuffer_reg[127] | 128    | 1     | NO           | NO                 | YES               | 0      | 4       | 
++------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -305,60 +544,77 @@ Report BlackBoxes:
 |      |BlackBox name |Instances |
 +------+--------------+----------+
 |1     |clk_wiz_0     |         1|
-|2     |blk_mem_gen_0 |         1|
+|2     |blk_mem_gen_1 |         1|
+|3     |blk_mem_gen_2 |         1|
+|4     |blk_mem_gen_4 |         1|
+|5     |blk_mem_gen_5 |         1|
+|6     |blk_mem_gen_6 |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
 +------+--------------+------+
 |      |Cell          |Count |
 +------+--------------+------+
-|1     |blk_mem_gen_0 |     1|
-|2     |clk_wiz_0     |     1|
-|3     |CARRY4        |    17|
-|4     |LUT1          |     9|
-|5     |LUT2          |    51|
-|6     |LUT3          |    14|
-|7     |LUT4          |    43|
-|8     |LUT5          |    37|
-|9     |LUT6          |    61|
-|10    |MUXF7         |     1|
-|11    |FDRE          |   107|
-|12    |FDSE          |     2|
-|13    |IBUF          |     6|
-|14    |OBUF          |    14|
+|1     |blk_mem_gen_1 |     1|
+|2     |blk_mem_gen_2 |     1|
+|3     |blk_mem_gen_4 |     1|
+|4     |blk_mem_gen_5 |     1|
+|5     |blk_mem_gen_6 |     1|
+|6     |clk_wiz_0     |     1|
+|7     |BUFG          |     1|
+|8     |CARRY4        |    89|
+|9     |DSP48E1       |     1|
+|10    |DSP48E1_1     |     2|
+|11    |DSP48E1_2     |     1|
+|12    |LUT1          |    34|
+|13    |LUT2          |   193|
+|14    |LUT3          |    74|
+|15    |LUT4          |    97|
+|16    |LUT5          |    90|
+|17    |LUT6          |   144|
+|18    |SRLC32E       |     4|
+|19    |FDRE          |   128|
+|20    |FDSE          |    24|
+|21    |IBUF          |     6|
+|22    |OBUF          |    16|
 +------+--------------+------+
 
 Report Instance Areas: 
-+------+--------------+--------+------+
-|      |Instance      |Module  |Cells |
-+------+--------------+--------+------+
-|1     |top           |        |   375|
-|2     |  DRAWCONINST |drawcon |    86|
-|3     |  VGAINST     |vga     |   160|
-+------+--------------+--------+------+
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   965|
+|2     |  BRICK_UPDATE_INST |brick_update    |    18|
+|3     |  DRAWCONINST       |drawcon         |   179|
+|4     |  VGAINST           |vga             |   216|
+|5     |  ballPhs           |ballPhysics     |   364|
+|6     |  in                |inputs          |    39|
+|7     |  player            |playerMovement  |    43|
+|8     |  playerColl        |playerCollision |    28|
++------+--------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1038.387 ; gain = 485.004
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 928.023 ; gain = 249.906
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 928.023 ; gain = 377.656
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1038.387 ; gain = 333.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1038.387 ; gain = 485.004
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 936.523 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.387 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+71 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 936.523 ; gain = 644.898
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 936.523 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1038.387 ; gain = 746.484
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.387 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/synth_1/game_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/synth_1/game_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 16 18:14:13 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  6 17:26:35 2022...

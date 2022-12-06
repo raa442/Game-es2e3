@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="blk_mem_gen_5_synth_1" LaunchDir="D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/blk_mem_gen_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

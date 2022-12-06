@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Labs/lab6/lab6.runs/impl_1'
+HD_PWD='D:/UniWarwick/Year2/CSModules/ES2E3-15 Digital Systems Design/Coursework/courseworkGame/courseworkGame.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
